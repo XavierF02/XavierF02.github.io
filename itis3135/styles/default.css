@@ -6,8 +6,8 @@
 body
 {
 	font-family: Arial;
-	color: #231123 ;
-	background-color: #e8db7d;
+	color: #05386B;
+	background-color: #5CDB95;
 	margin-left: 75px;
 	margin-right: 75px;
 }
@@ -27,8 +27,9 @@ h1, h2, h3
 a
 {
 	text-decoration: none;
-	color: lightseagreen;
+	color: blue;
 	font-weight: bold;
+	margin: 1em;
 }
 
 a:hover
@@ -45,9 +46,93 @@ figure
 figcaption
 {
 	font-style: italic;
+	font-weight: bold;
 }
 
 nav
 {
 	text-align: center;
+}
+
+ol 
+{
+	text-align: center;
+	list-style-position: inside;	
+}
+
+li
+{
+	margin: 1em;
+	font-weight: bold;
+}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table
+{
+	text-align: center;
+	border-collapse: collapse;
+	margin: 20px;
+}
+
+thead
+{
+	background-color: green;
+}
+
+th
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+	color: #EDF5E1;
+	background-color: #05386B;
+}
+
+
+td
+{
+	border: 1px solid black;
+	padding: .2em 1em .2em .5em;
+	text-align: left;
+	vertical-align: middle;
+	background-color: #8EE4AF;
+}
+
+.right
+{
+	text-align: right;
+}
+tbody tr:nth-child(odd) td
+{
+	background-color: #379683;
+}
+
+div 
+{
+	color: #EDF5E1;
+	background-color: #05386B;
+	text-align: center;
+	margin: auto;
+	max-width: 500px;
+}
+
+input, label
+{
+	margin: 0.5em;
+}
+
+form
+{
+	text-align: center;
+}
+
+.darkbackground
+{
+	color: #EDF5E1;
+	background-color: #05386B;
 }
