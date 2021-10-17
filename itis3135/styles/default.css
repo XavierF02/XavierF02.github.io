@@ -56,6 +56,12 @@ nav
 	text-align: center;
 }
 
+ul
+{
+	text-align: center;
+	list-style-type: none;
+}
+
 ol 
 {
 	text-align: center;
@@ -123,6 +129,31 @@ div
 {
 	color: #EDF5E1;
 	background-color: #05386B;
+}
+
+.calculatortry
+{	
+	text-align: center;
+	margin: auto;
+	max-width: 500px;
+	
+}
+
+.calculatortry button
+{	
+	background-color: #EDF5E1;
+	margin: .1em;
+	width: 50px;
+	height: 40px;
+}
+
+.calculatortry button:hover
+{	
+	background-color: #999;
+}
+
+.resultsdiv
+{	
 	text-align: center;
 	margin: auto;
 	max-width: 500px;

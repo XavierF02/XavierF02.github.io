@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href="styles/default.css" rel="stylesheet" type="text/css">
-	<script src="scripts/polygonCalculator.js"></script>
-	<title>Xavier Faulkner, ITIS3135, Name the Polygon</title>
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title>Xavier Faulkner, ITIS3135, Arrays</title>
 </head>
 
 <body>
 	<header>
 			<h1>Xavier Faulkner - ITIS3135</h1>
 	</header>
-
 	<nav>
 		<a href="index.html">Introduction</a> 
 		<a href="tables.html">Html Tables</a> 
@@ -26,11 +24,36 @@
 	</nav>	
 	
 	<main>
-		<h2>Name the Polygon</h2>
-		<p>
-			Welcome to the polygon name calculator! To get the name of your polygon please press the button below.
-		</p>
-		<button type="button" onclick="nameThePolygon()">Name the Polygon</button>
+		<h2>Arrays</h2>
+		<br>
+		<form>
+			<label>Employee:</label>
+			<select name="employees" id="employeeNames">
+				<option value="none" selected disabled hidden>Select an Option</option>
+			</select>
+			<br>
+			<label>Salary:</label>
+			<input type="text" id="employeeSalary" placeholder="Please enter salary">
+			<br>
+			<button type="button" id="addSalary">Add Salary</button><br>
+			<button type="button" id="displaySalary">Display Salary</button><br>
+			<button type="button" id="displayResults">Display Results</button><br>
+		</form>
+		<br>
+		<table id="results_table" class="center" hidden>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Salary</th>
+				</tr>
+			</thead>
+			<tbody id="salaryTableBody">
+			</tbody>
+		</table>
+		<br>
+		<div id="results" class="resultsdiv" hidden>
+			
+		</div>
 	</main>
 	
 	<footer>
@@ -44,18 +67,18 @@
 		</nav>
 		<br />
 		<p>
-			Designed by Xenial Fawn, LLC. 2021
+			Page built by XFTech
 		</p>
-		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fxfaulkne%2Fpolygon.html">
+		<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fwebpages.uncc.edu%2Fxfaulkne%2Farrays.html">
 			<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
 		</a>
 
-		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fxfaulkne%2Fpolygon.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
+		<a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fwebpages.uncc.edu%2Fxfaulkne%2Farrays.html&profile=css3svg&usermedium=all&warning=1&vextwarning=">
 			<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
 		</a>
 	
 	</footer>
-
+	<script src="scripts/arrays.js"></script>
 </body>
 
 </html>
