@@ -33,7 +33,7 @@ keys.addEventListener('click', e => {
 	if(!action)
 	{
 		console.log('number key!');
-		if(displayedNum === '0' || previousKeyType === 'operator') {
+		if(displayedNum === '0' || previousKeyType === 'operator' || previousKeyType === 'calculate') {
 			display.textContent = keyContent;
 		}
 		else
@@ -51,20 +51,32 @@ keys.addEventListener('click', e => {
 		const operator = calculator.dataset.operator;
 		const secondValue = displayedNum;
 
-		if (firstValue && operator && previousKeyType !== 'operator') {
-			display.textContent = calculate(firstValue, operator, secondValue);
+		if (firstValue && operator && previousKeyType !== 'operator' && previousKeyType !== 'calculate') {
+			const calcValue = calculate(firstValue, operator, secondValue);
+			display.textContent = calcValue;
+
+			calculator.dataset.firstValue = calcValue;
+		}  
+		else 
+		{
+			calculator.dataset.firstValue = displayedNum;
 		}
+
 
 		key.classList.add('is-depressed');
 		calculator.dataset.previousKeyType = 'operator';
-		calculator.dataset.firstValue = displayedNum;
 		calculator.dataset.operator = action;
 	}
 
 	if(action === 'decimal')
 	{
 		console.log('decimal key!');
-		if (action === 'decimal') {
+		if(previousKeyType === 'operator' || previousKeyType === 'calculate')
+		{
+			display.textContent = '0.';
+		}
+		else if(!displayedNum.includes('.'))
+		{
 			display.textContent = displayedNum + '.';
 		}
 		calculator.dataset.previousKeyType = 'decimal';
@@ -73,9 +85,19 @@ keys.addEventListener('click', e => {
 	if(action === 'clear')
 	{
 		console.log('clear key!');
+		if(key.textContent === 'AC')
+		{
+			calculator.dataset.firstValue = '';
+			calculator.dataset.modValue = '';
+			calculator.dataset.operator = '';
+			calculator.dataset.previousKeyType = '';
+		} 
+		else 
+		{
+			key.textContent = 'AC';
+		}
+		
 		display.textContent = 0;
-		calculator.dataset.firstValue = '';
-		key.textContent = 'AC';
 		calculator.dataset.previousKeyType = 'clear';
 	}
 
@@ -88,15 +110,23 @@ keys.addEventListener('click', e => {
 	if(action === 'calculate')
 	{
 		console.log('equal key!');
-		const firstValue = calculator.dataset.firstValue;
+		let firstValue = calculator.dataset.firstValue;
 		const operator = calculator.dataset.operator;
-		const secondValue = displayedNum;
-		
+		let secondValue = displayedNum;
+
 		if(firstValue)
 		{
+			console.log(previousKeyType);
+			if(previousKeyType === 'calculate') 
+			{
+				firstValue = displayedNum;
+				secondValue = calculator.dataset.modValue;
+				console.log(secondValue);
+			}
 			display.textContent = calculate(firstValue, operator, secondValue);
 		}
 
+		calculator.dataset.modValue = secondValue;
 		calculator.dataset.previousKeyType = 'calculate';
 	}
 
