@@ -182,3 +182,42 @@ form
 	color: #EDF5E1;
 	background-color: #05386B;
 }
+
+#image_list li
+{
+	display: inline-block;
+	vertical-align: middle;
+	
+}
+
+#image_list 
+{
+	background-color: #05386B;
+}
+
+#main_image
+{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#button_left
+{
+	background-color: #05386B;
+	margin: .1em;
+	width: 50px;
+	height: 40px;
+	color: #EDF5E1;
+	font-weight: bold;
+}
+
+#button_right
+{
+	background-color: #05386B;
+	margin: .1em;
+	width: 50px;
+	height: 40px;
+	color: #EDF5E1;
+	font-weight: bold;
+}
