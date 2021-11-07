@@ -1,0 +1,90 @@
+/* Colors: "Dark Blue: #1A3872" */
+/*Header logo*/
+#logo_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Navigation!!!!!!!!!!!!!!!*/
+nav {
+    background-color: black;
+    width: 100%;
+    overflow: auto;
+}
+
+nav a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 16.6666667%;
+    text-align: center; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a:hover {
+    background-color: #1A3872;
+}
+
+/*Main content!!!!!!!!!!!!!!*/
+main {
+    margin-top: 250px;
+    left: 0;
+    width: 100%;
+}
+
+/*H1 for page names*/
+#page_title {
+    margin-left: 50px;
+}
+
+/*Fixed header!!!!!!!!!!!!!!*/
+.top {
+    position: fixed;
+    background-image: url("../images/real_cf_@2X.png");
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 7px 8px 10px #888888;
+}
+
+/*Fixed footer!!!!!!!!!!!!!!*/
+.bottom {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/real_cf_@2X.png");
+    box-shadow: 0px -5px 8px 10px #888888;
+}
+
+/*Hr for top of footer*/
+hr {
+    height: 20px;
+    background-color: #1A3872;
+    border: none;
+    margin-top: 0;
+}
+
+/*24 Hours red text in footer*/
+#large_red_text {
+    color: rgb(179, 2, 2);
+    font-size: 48px;
+    margin-right: 50px;
+    margin-top: 30px;
+    float: right;
+}
+
+/*footer copyright*/
+#footer_copyright {
+    color: white;
+    font-size: 14px;
+    float: left;
+    margin-top: 50px;
+    margin-left: 40px;
+}
