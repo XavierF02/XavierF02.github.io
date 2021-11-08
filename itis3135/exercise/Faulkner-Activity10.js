@@ -36,5 +36,5 @@ $(document).ready(function() {
         });
 
     // move the focus to the first link
-
+    $("li:first-child a").focus();
 }); // end ready
