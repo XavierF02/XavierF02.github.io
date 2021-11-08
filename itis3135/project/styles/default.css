@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #1A3872;
+    background-image: url("../images/diamond_plate.jpg");
 }
 
 /*Main content!!!!!!!!!!!!!!*/
@@ -49,6 +49,7 @@ main {
 /*H1 for page names*/
 #page_title {
     margin-left: 50px;
+    text-decoration: underline;
 }
 
 /*Fixed header!!!!!!!!!!!!!!*/
@@ -67,7 +68,7 @@ main {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 150px;
+    height: 100px;
     background-image: url("../images/real_cf_@2X.png");
     box-shadow: 0px -5px 8px 10px #888888;
 }
@@ -85,7 +86,7 @@ hr {
     color: rgb(179, 2, 2);
     font-size: 48px;
     margin-right: 50px;
-    margin-top: 30px;
+    margin-top: 8px;
     float: right;
 }
 
@@ -94,6 +95,6 @@ hr {
     color: white;
     font-size: 14px;
     float: left;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 40px;
 }
