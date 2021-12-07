@@ -111,6 +111,10 @@ hr {
     margin-left: 40px;
 }
 
+#validate_html {
+    margin-left: 10%;
+}
+
 /*Services page!!!!!!!!!!!!!!!!!*/
 #service {
     width: 50%;
