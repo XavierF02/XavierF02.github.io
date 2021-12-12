@@ -1,0 +1,30 @@
+{"services":[
+	{
+		"name": "Towing",
+		"details": "24 hour towing! Call us and we'll provide an experinced profesional in no time. From wrecked cars to transporting new vehicles, we do it all. Give us a call and we'll be happy to help."
+	},
+	{
+		"name": "Oil Change",
+		"details": "At home oil change! We come to you at no extra cost. No need to go into the shop anymore, just give us a call and we'll one of our trained mechanics out at a time of your choosing."
+	},
+	{
+		"name": "Tire Change",
+		"details": "Have a flat tire? No problem. F.A.A.S.T. is the quickest road side assitance company there is. Whether you're in your drive-way, or on the side of the road. We can replace any flat tire with a spare."
+	},
+    {
+		"name": "Lock Out",
+		"details": "15 minute lockout! If you're in a rush but locked our of your car, then we're just the company for you. We'll have you back on the road in no time with our guarenteed 15 minute lock out."
+	},
+    {
+		"name": "Battery Delivery",
+		"details": "Dead car battery? Order one through us and we'll deliver and install it at no extra cost. We will even get rid of the old one for you."
+	},
+    {
+		"name": "Gas Delivery",
+		"details": "Stuck without fuel? We'll send one of our drivers to your location to get you refueled and back on the road in no time."
+	},
+    {
+		"name": "Jump Start",
+		"details": "Dead Battery? Give us a call an we can give you a jumpstart or recharge your battery with out jump box."
+	}
+]}
