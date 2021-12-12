@@ -8,7 +8,9 @@ $(document).ready(function(){
                         "<p>" + value.answer + "</p>" +
                     "</div>"
                 );
+                $("#about").accordion("refresh");
             });
         });
     });
+
 });

@@ -48,7 +48,13 @@ nav a {
     padding-bottom: 20px;
 }
 
-nav a:hover {
+nav a:hover,
+body.home a.home,
+body.services a.services,
+body.pricing a.pricing,
+body.contact a.contact,
+body.about a.about,
+body.testimonials a.testimonials {
     background-color: #1A3872;
 }
 
@@ -334,4 +340,24 @@ hr {
 
 #thank_you_message {
     text-align: center;
+}
+
+/*Pricing and Quotes Page!!!!!!!!!!!!!!!!!*/
+
+.calculator {
+    width: 80%;
+    background-color: lightgrey;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.calculator h2 {
+    background-color: #1A3872;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-bottom: 0px;
 }
