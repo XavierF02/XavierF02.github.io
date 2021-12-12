@@ -15,6 +15,44 @@
         <h1 id="page_title">Pricing/Quotes</h1>
 		<div class="calculator">
 			<h2>Towing</h2>
+			<div class="data">
+				<table class="tow_rates">
+					<tr>
+						<th class="table_title"colspan="2">Rates</th>
+					</tr>
+					<tr>
+						<td class="rate_name">Flatbed (rollback)</td>
+						<td class="price">$75</td>
+					</tr>
+					<tr>
+						<td class="rate_name">Wrecker (Wheel-lift)</td>
+						<td class="price">$85</td>
+					</tr>
+					<tr>
+						<td class="rate_name">Car hauler (trailer)</td>
+						<td class="price">$100</td>
+					</tr>
+					<tr>
+						<td class="center" colspan="2">Includes 10 free miles.<br></td>
+					</tr>
+					<tr>
+						<td class="center" colspan="2">$5 for every additional mile.</td>
+					</tr>
+				</table>
+				<form id="towing_form">
+					<label id="lbl_trucks" for="trucks">Truck Type:</label>
+					<select name="trucks" id="trucks">
+						<option value="75">Flatbed (rollback)</option>
+						<option value="85">Wrecker (wheel-lift)</option>
+						<option value="100">Trailer (trailer)</option>
+					</select><br>
+					<input type="range" min="1" max="80" value="20" class="slider" id="miles">
+				</form>
+			</div>
+
+			<div class="results">
+
+			</div>
 		</div>
 		<div class="calculator">
 			
