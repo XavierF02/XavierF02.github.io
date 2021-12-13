@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="scripts/w3.js"></script>
+	<script src="scripts/pricing.js"></script>
 	<title>FASST, LLC</title>
 </head>
 <body class="pricing">
@@ -39,23 +41,57 @@
 						<td class="center" colspan="2">$5 for every additional mile.</td>
 					</tr>
 				</table>
-				<form id="towing_form">
+				<form id="towing_form" onsubmit="return false">
 					<label id="lbl_trucks" for="trucks">Truck Type:</label>
-					<select name="trucks" id="trucks">
+					<select name="trucks" id="trucks" required>
 						<option value="75">Flatbed (rollback)</option>
 						<option value="85">Wrecker (wheel-lift)</option>
 						<option value="100">Trailer (trailer)</option>
 					</select><br>
-					<input type="range" min="1" max="80" value="20" class="slider" id="miles">
+					<input type="range" min="1" max="80" value="20" class="slider" id="miles" required>
+					<p id="show_miles"></p>
+					<br><br><br>
+					<label id="lbl_date" for="date">Pickup Date:</label>
+					<input type="date" id="date" name="date" required> 
+					<br>
+					<input type="submit" value="Get quote" id="towing_submit">
 				</form>
 			</div>
-
-			<div class="results">
-
-			</div>
+			<div class="results"></div>
 		</div>
+
 		<div class="calculator">
-			
+			<h2>Road Side Assistance Flat-Rates</h2>
+			<table class="flat_rates">
+				<tr>
+					<th class="table_title">Service</th>
+					<th class="table_title">Price</th>
+				</tr>
+				<tr>
+					<td class="rate_name">Oil Change</td>
+					<td class="price">$40</td>
+				</tr>
+				<tr>
+					<td class="rate_name">Tire Change</td>
+					<td class="price">$80</td>
+				</tr>
+				<tr>
+					<td class="rate_name">Lock Out</td>
+					<td class="price">$60</td>
+				</tr>
+				<tr>
+					<td class="rate_name">Battery Delivery</td>
+					<td class="price">$90</td>
+				</tr>
+				<tr>
+					<td class="rate_name">Gas Delivery</td>
+					<td class="price">$70</td>
+				</tr>
+				<tr>
+					<td class="rate_name">Jump Start</td>
+					<td class="price">$50</td>
+				</tr>
+			</table>
 		</div>
 	</main>
 

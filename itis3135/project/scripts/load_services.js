@@ -7,7 +7,7 @@ $(document).ready(function(){
                         "<h2>" + value.name + "</h2>" +
                         "<div>" +
                             "<p>" + value.details + "</p>" +
-                            "<input type=button value='Get a Quote'" +
+                            "<a href='pricing.html'><input id='get_quote_button' type=button value='Get a Quote'></a>" +
                         "</div>" +
                     "</div>"
                 );

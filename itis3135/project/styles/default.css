@@ -103,9 +103,34 @@ hr {
 #large_red_text {
     color: rgb(179, 2, 2);
     font-size: 48px;
-    margin-right: 50px;
-    margin-top: 8px;
-    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    float: left;
+    width: 33%;
+    text-align: right;
+}
+
+#large_red_text p {
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+#validate_buttons {
+    float: left;
+    width: 33%;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    text-align: center;
+}
+
+#validate_buttons button {
+    margin-top: 5px;
+    background-color: #1A3872;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
 }
 
 /*footer copyright*/
@@ -113,12 +138,13 @@ hr {
     color: white;
     font-size: 14px;
     float: left;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 0px;
+    width: 33%;
 }
 
-#validate_html {
-    margin-left: 10%;
+#footer_copyright p {
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 /*Services page!!!!!!!!!!!!!!!!!*/
@@ -136,6 +162,15 @@ hr {
     margin-left: 8px;
     margin-right: 8px;
     margin-bottom: 0px;
+}
+
+#get_quote_button {
+    margin-top: 5px;
+    background-color: #1A3872;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
 }
 
 #service div {
@@ -379,9 +414,9 @@ hr {
     height: 90%;
 }
 
-table {
+.tow_rates {
     margin-top: 30px;
-    width: 70%;
+    width: 80%;
 }
 
 table, th, td {
@@ -409,9 +444,66 @@ table, th, td {
 #towing_form {
     margin-top: 20px;
     margin-left: 15%;
+    width: 80%;
 }
 
 .slider {
     margin-top: 20px;
     width: 70%;
+    float: left;
+}
+
+#show_miles {
+    float: left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+#lbl_date {
+    float: left;
+}
+
+#date {
+    margin-left: 20px;
+}
+
+#towing_submit {
+    display: block;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1A3872;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+}
+
+#quote {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    width: 60%;
+    height: 80%;
+    border-color: rgb(179, 2, 2);
+    background-color: white;
+}
+
+#quote h3 {
+    text-align: center;
+    font-weight: bold;
+    color:rgb(179, 2, 2);
+}
+
+#quote h4 {
+    padding-left: 40px;
+}
+
+.flat_rates {
+    margin-top: 60px;
+    width: 50%;
+    font-size: larger;
 }
