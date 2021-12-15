@@ -226,3 +226,10 @@ form
 	color: #EDF5E1;
 	font-weight: bold;
 }
+
+#exercise_links {
+	background-color: inherit;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
